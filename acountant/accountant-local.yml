@@ -1,0 +1,22 @@
+server:
+  port: 0
+  servlet:
+    context-path: /accountant
+spring:
+  log:
+    level: info
+  datasource:
+    url: jdbc:mysql://stg-db.excellencekits.com:3306/account-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: hexa
+    password: mwdl
+    hikari:
+      maximum-pool-size: 10
+      idle-timeout: 30000
+      max-lifetime: 1800000
+config:
+  kafka:
+    enabled: true
+    consumer: true
+custom:
+  security:
+    expose-unsecured-urls: true
