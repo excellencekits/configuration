@@ -3,6 +3,7 @@ server:
 services:
   oauth2:
     url: http://stg-oauth2.excellencekits.com
+spring:
   redis:
     data:
       host: stg-oauth2.excellencekits.com
