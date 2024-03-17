@@ -20,6 +20,8 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://stgauth.excellencekits.com:9900
+  kafka:
+    bootstrap-servers: stg-kafka.excellencekits.com:9092
 logging:
   level:
     org:
