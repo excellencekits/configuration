@@ -13,6 +13,8 @@ spring:
       maximum-pool-size: 10
       idle-timeout: 30000
       max-lifetime: 1800000
+  kafka:
+    bootstrap-servers: stg-kafka.excellencekits.com:9092
 config:
   kafka:
     enabled: true
