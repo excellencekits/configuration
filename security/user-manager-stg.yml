@@ -3,6 +3,8 @@ server:
   servlet:
     context-path: /user-manager
 spring:
+  log:
+    level: info
   jpa:
     hibernate:
       ddl-auto: none
