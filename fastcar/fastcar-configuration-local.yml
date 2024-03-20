@@ -2,6 +2,10 @@ server:
   port: 8090
   servlet:
     context-path: /configuration
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://stg-discovery.excellencekits.com/eureka}    
 spring:
   log:
     level: info
