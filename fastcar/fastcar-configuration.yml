@@ -1,5 +1,3 @@
-customprop:
-  test: stg
 spring:
   zipkin:
     base-url: http://stg-zipkin.excellencekits.com:9411/
@@ -11,8 +9,6 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://stg-oauth2.excellencekits.com
-  kafka:
-      bootstrap-servers: stg-kafka.excellencekits.com:9092
   log:
     level: info
 eureka:
