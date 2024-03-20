@@ -1,7 +1,0 @@
-server:
-  port: 8090
-spring:  
-  datasource:
-    url: jdbc:mysql://stg-db.excellencekits.com:3306/config-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
-    username: hexa
-    password: mwdl
