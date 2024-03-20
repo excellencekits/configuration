@@ -1,5 +1,5 @@
 servlet:
-    context-path: /fast_configuration:
+    context-path: /fastcar_configuration:
 spring: 
   zipkin:
     base-url: http://stg-zipkin.excellencekits.com:9411/
@@ -11,6 +11,11 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://stg-oauth2.excellencekits.com
+  datasource:
+    hikari:
+      maximum-pool-size: 10
+      idle-timeout: 30000
+      max-lifetime: 1800000
   log:
     level: info
 eureka:
