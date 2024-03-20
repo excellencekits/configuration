@@ -3,8 +3,6 @@ server:
   servlet:
     context-path: /configuration
 spring:
-  application:
-    name: fastcar-configuration
   log:
     level: info
   datasource:
