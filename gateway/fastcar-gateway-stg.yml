@@ -17,10 +17,10 @@ spring:
             allowedMethods: "*"
             allowedHeaders: "*"
       routes:
-        - id: accountant
-          uri: lb://accountant
+        - id: configuration
+          uri: lb://configuration
           predicates:
-            - Path=/accountant/**
+            - Path=/configuration/**
         - id: notification
           uri: lb://notification
           predicates:
