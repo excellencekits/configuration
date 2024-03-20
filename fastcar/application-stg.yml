@@ -1,0 +1,38 @@
+customprop:
+  test: stg
+spring:
+  zipkin:
+    base-url: http://stg-zipkin.excellencekits.com:9411/
+  cloud:
+    compatibility-verifier:
+      enabled: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://stg-oauth2.excellencekits.com
+  kafka:
+      bootstrap-servers: stg-kafka.excellencekits.com:9092
+  log:
+    level: info
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://stg-discovery.excellencekits.com:8761/eureka}
+custom:
+  security:
+    expose-unsecured-urls: true
+    unsecured-urls:
+      - /configuration/operator/
+      - /**
+management:
+  zipkin:
+    tracing:
+      endpoint: http://stg-zipkin.excellencekits.com:9411/api/v2/spans  
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  tracing:
+    sampling:
+      probability: 1.0
