@@ -2,15 +2,12 @@ logging:
   level:
     org.springframework: INFO
 server:
-  port: 8090
+  port: 0
   servlet:
     context-path: /configuration
 spring:
   application:
-    name: configuration
-  config:
-    import: configserver:http://config.excellencekits.com/
-    label: main
+    name: fastcar-configuration
   datasource:
     url: jdbc:mysql://hexadb:3306/config-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
