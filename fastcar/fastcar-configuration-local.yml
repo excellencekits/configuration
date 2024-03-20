@@ -1,24 +1,7 @@
 server:
   port: 8090
-  servlet:
-    context-path: /configuration
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://stg-discovery.excellencekits.com/eureka}    
-spring:
-  log:
-    level: info
+spring:  
   datasource:
-    url: jdbc:mysql://hexadb:3306/config-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://stg-db.excellencekits.com:3306/config-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
     password: mwdl
-    hikari:
-      maximum-pool-size: 10
-      idle-timeout: 30000
-      max-lifetime: 1800000
-custom:
-  security:
-    expose-unsecured-urls: true
-    unsecured-urls:
-      - /configuration/
