@@ -4,7 +4,7 @@ server:
     context-path: /fastcar-configuration
 spring: 
   zipkin:
-    base-url: http://stg-zipkin.excellencekits.com:9411/
+    base-url: stg-zipkin.excellencekits.com:9411/
   cloud:
     compatibility-verifier:
       enabled: true
@@ -12,7 +12,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: stg-oauth2.excellencekits.com
+          issuer-uri: http://stg-oauth2.excellencekits.com
   datasource:
     url: jdbc:mysql://stg-db.excellencekits.com:3306/config-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
