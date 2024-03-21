@@ -1,7 +1,7 @@
 server:
   port: 0
   servlet:
-    context-path: /configuration
+    context-path: /fastcar-configuration
 spring: 
   zipkin:
     base-url: http://stg-zipkin.excellencekits.com:9411/
