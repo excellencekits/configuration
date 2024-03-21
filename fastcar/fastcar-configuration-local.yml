@@ -4,7 +4,7 @@ server:
     context-path: /fastcar-configuration
 spring: 
   zipkin:
-    base-url: http://stg-zipkin.excellencekits.com:9411/
+    base-url: stg-zipkin.excellencekits.com:9411/
   cloud:
     compatibility-verifier:
       enabled: true
@@ -36,7 +36,7 @@ custom:
 management:
   zipkin:
     tracing:
-      endpoint: http://stg-zipkin.excellencekits.com:9411/api/v2/spans  
+      endpoint: stg-zipkin.excellencekits.com:9411/api/v2/spans  
   endpoints:
     web:
       exposure:
