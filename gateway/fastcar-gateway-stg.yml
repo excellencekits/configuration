@@ -20,7 +20,7 @@ spring:
         - id: configuration
           uri: lb://fastcar-configuration
           predicates:
-            - Path=/configurationn/**
+            - Path=/fastcar-configuration/**
         - id: notification
           uri: lb://notification
           predicates:
