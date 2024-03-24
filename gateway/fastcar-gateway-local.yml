@@ -21,10 +21,10 @@ spring:
           uri: lb://fastcar-configuration
           predicates:
             - Path=/fastcar-configuration/**
-        - id: notification
-          uri: lb://notification
+        - id: fastcar-onboarding
+          uri: lb://fastcar-onboarding
           predicates:
-            - Path=/notification/**
+            - Path=/fastcar-onboarding/**
 
   security:
     oauth2:
