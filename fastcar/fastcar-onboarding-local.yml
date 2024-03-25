@@ -1,7 +1,7 @@
 server:
   port: 8091
   servlet:
-    context-path: /fastcar-onboarding
+    context-path: /onboarding
 eureka:
   client:
     serviceUrl:
