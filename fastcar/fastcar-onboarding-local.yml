@@ -7,7 +7,8 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
 services:
-  configuration: fastcar-gateway      
+  configuration: fastcar-gateway    
+  user-manager: http://stg-user-maneger.excellencekits.com
 spring: 
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411/
