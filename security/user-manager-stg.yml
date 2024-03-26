@@ -5,6 +5,11 @@ server:
 spring:
   log:
     level: info
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://stg-oauth2.excellencekits.com
   jpa:
     hibernate:
       ddl-auto: none
