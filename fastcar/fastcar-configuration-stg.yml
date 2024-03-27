@@ -4,7 +4,7 @@ server:
     context-path: /configuration
 spring: 
   zipkin:
-    base-url: stg-zipkin.excellencekits.com:9411/
+    base-url: stg-zipkin.excellencekits.com:9411
   cloud:
     compatibility-verifier:
       enabled: true
