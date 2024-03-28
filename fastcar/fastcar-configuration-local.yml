@@ -31,7 +31,7 @@ custom:
   security:
     expose-unsecured-urls: true
     unsecured-urls:
-      - /**/configuration/operator/**
+      - /configuration/operator/**
 management:
   zipkin:
     tracing:
