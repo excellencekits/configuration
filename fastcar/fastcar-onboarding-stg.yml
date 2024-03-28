@@ -16,6 +16,8 @@ spring:
     compatibility-verifier:
       enabled: true
   security:
+    unsecured-urls:
+      - /captain/signupBasicProfile/**     
     oauth2:
       resourceserver:
         jwt:
