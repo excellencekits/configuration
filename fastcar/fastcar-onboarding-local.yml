@@ -16,6 +16,8 @@ spring:
     compatibility-verifier:
       enabled: true
   security:
+    unsecured-urls:
+      - /captain/signupBasicProfile/**       
     oauth2:
       resourceserver:
         jwt:
@@ -45,9 +47,3 @@ management:
     web:
       exposure:
         include: '*'
-custom:
-  security:
-    expose-unsecured-urls: true
-    unsecured-urls:
-      - /onboarding/captain/signupBasicProfile
-    
