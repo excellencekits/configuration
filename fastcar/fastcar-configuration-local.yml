@@ -9,6 +9,8 @@ spring:
     compatibility-verifier:
       enabled: true
   security:
+    unsecured-urls:
+      - /operator/**   
     oauth2:
       resourceserver:
         jwt:
