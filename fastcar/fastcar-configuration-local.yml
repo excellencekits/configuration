@@ -31,9 +31,8 @@ custom:
   security:
     expose-unsecured-urls: true
     unsecured-urls:
-      - /configuration/operator/**
-      - /configuration/**
-management:
+      - /operator/**
+ management:
   zipkin:
     tracing:
       endpoint: stg-zipkin.excellencekits.com:9411/api/v2/spans  
