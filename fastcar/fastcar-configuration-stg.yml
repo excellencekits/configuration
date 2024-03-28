@@ -9,6 +9,8 @@ spring:
     compatibility-verifier:
       enabled: true
   security:
+    unsecured-urls:
+      - /operator/**    
     oauth2:
       resourceserver:
         jwt:
@@ -27,12 +29,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://stg-discovery.excellencekits.com:8761/eureka}
-custom:
-  security:
-    expose-unsecured-urls: true
-    unsecured-urls:
-      - /configuration/operator/
-      - /**
+
 management:
   zipkin:
     tracing:
