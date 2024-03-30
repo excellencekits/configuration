@@ -1,0 +1,52 @@
+server:
+  port: 8053
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+spring:
+  application:
+    name: fastcar-gateway
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allow-credentials: true
+            allowedOrigins: "http://localhost:3001"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      routes:
+        - id: profile
+          uri: lb://profile
+          predicates:
+            - Path=/profile/**
+        - id: market
+          uri: lb://market
+          predicates:
+            - Path=/markrt/**
+
+  security:
+    oauth2:
+      client:
+        registration:
+          gateway:
+            provider: my-provider
+            client-id: market-id
+            client-secret: secret
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://stg-services.excellencekits.com/login/oauth2/code/gateway"
+            scope: openid
+        provider:
+          my-provider:
+            issuer-uri: http://stg-oauth2.excellencekits.com
+jwt:
+  auth:
+    converter:
+      resource-id: web_front_auth
+      principal-attribute: preferred_username
+
+
+app:
+  cors:
+    allowed-origins: http://localserver:3001
