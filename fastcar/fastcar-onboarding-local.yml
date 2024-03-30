@@ -17,8 +17,7 @@ spring:
       enabled: true
   security:
     unsecured-urls:
-      - /captain/**
-      - /admin/captain/**
+      - /captain/signupBasicProfile
     oauth2:
       resourceserver:
         jwt:
