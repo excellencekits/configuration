@@ -1,0 +1,45 @@
+server:
+  port: 8020
+  servlet:
+    context-path: /market
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+services:  
+  user-manager: http://stg-user-maneger.excellencekits.com
+spring: 
+  zipkin:
+    base-url: stg-zipkin.excellencekits.com:9411
+  cloud:
+    compatibility-verifier:
+      enabled: true
+  security:
+    unsecured-urls:
+      - /**
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://stg-oauth2.excellencekits.com
+  datasource:
+    url: jdbc:mysql://stg-db.excellencekits.com:3306/market-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: hexa
+    password: mwdl
+    hikari:
+      maximum-pool-size: 10
+      idle-timeout: 30000
+      max-lifetime: 1800000
+  log:
+    level: info
+config:
+  kafka:
+    enabled: true
+    producer: true
+management:
+  zipkin:
+    tracing:
+      endpoint: stg-zipkin.excellencekits.com:9411/api/v2/spans  
+  endpoints:
+    web:
+      exposure:
+        include: '*'
