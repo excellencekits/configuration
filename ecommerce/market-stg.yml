@@ -5,7 +5,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://stg-discovery.excellencekits.com:8761/eureka}
 services:  
   user-manager: http://stg-user-maneger.excellencekits.com
 spring: 
