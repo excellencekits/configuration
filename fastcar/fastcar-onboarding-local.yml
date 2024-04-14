@@ -31,7 +31,7 @@ spring:
       idle-timeout: 30000
       max-lifetime: 1800000
   log:
-    level: debug
+    level: info
 
   kafka:
     bootstrap-servers: stg-kafka.excellencekits.com:9092
