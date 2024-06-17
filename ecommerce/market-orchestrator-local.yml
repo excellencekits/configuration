@@ -33,3 +33,7 @@ management:
     web:
       exposure:
         include: '*'
+markets-config:
+  hosts:
+    - car-market
+    - electronic-market
