@@ -1,1 +1,47 @@
-e-comerace-internal-gateway-local.yml
+server:
+  port: 8030
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+spring:
+  application:
+    name: e-comerace-external-gateway
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allow-credentials: true
+            allowedOrigins: "http://localhost:3001"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+      routes:
+        - id: market-orchestrator
+          uri: lb://market-orchestrator
+          predicates:
+            - Path=/market-orchestrator/**
+        - id: profile
+          uri: lb://profile
+          predicates:
+            - Path=/profile/**
+
+  security:
+    oauth2:
+      client:
+        registration:
+          gateway:
+            provider: my-provider
+            client-id: market-id
+            client-secret: secret
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://stg-services.excellencekits.com/login/oauth2/code/gateway"
+            scope: openid
+        provider:
+          my-provider:
+            issuer-uri: http://stg-oauth2.excellencekits.com
+jwt:
+  auth:
+    converter:
+      resource-id: web_front_auth
+      principal-attribute: preferred_username
