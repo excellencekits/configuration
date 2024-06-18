@@ -34,6 +34,7 @@ management:
       exposure:
         include: '*'
 markets-config:
-  hosts:
+  host: E-COMERACE-INTERNAL-GATEWAY
+  markets:
     - car-market
     - electronic-market
