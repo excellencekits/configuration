@@ -37,4 +37,4 @@ markets-config:
   host: E-COMERACE-INTERNAL-GATEWAY
   markets:
     - car-market
-    - electronic-market
+    - electronics-market
