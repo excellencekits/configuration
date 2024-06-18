@@ -20,11 +20,11 @@ spring:
         - id: car-market
           uri: lb://car-market
           predicates:
-            - Path=/profile/**
-        - id: market
-          uri: lb://market
+            - Path=/car-market/**
+        - id: electronics-market
+          uri: lb://electronics-market
           predicates:
-            - Path=/market/**
+            - Path=/electronics-market/**
 
   security:
     oauth2:
