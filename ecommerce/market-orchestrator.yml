@@ -1,5 +1,7 @@
 server:
   port: 8031
+  servlet:
+    context-path: /market-orchestrator
 eureka:
   client:
     serviceUrl:
