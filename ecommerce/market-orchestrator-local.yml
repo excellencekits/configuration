@@ -21,7 +21,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://stg-oauth2.excellencekits.com
-   datasource:
+  datasource:
     url: jdbc:mysql://stg-db.excellencekits.com:3306/car-market-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
     password: mwdl
