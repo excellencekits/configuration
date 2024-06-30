@@ -28,7 +28,7 @@ spring:
         - id: shop
           uri: http://localhost:3000/
           predicates:
-            - Path=/shop/**
+            - Path=/market-1/**
   security:
     oauth2:
       client:
