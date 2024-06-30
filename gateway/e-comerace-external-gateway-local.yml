@@ -25,7 +25,10 @@ spring:
           uri: lb://profile
           predicates:
             - Path=/profile/**
-
+        - id: shop
+          uri: http:localhost:3000/
+          predicates:
+            - Path=/shop/**
   security:
     oauth2:
       client:
