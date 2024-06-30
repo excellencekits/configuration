@@ -13,7 +13,7 @@ spring:
         corsConfigurations:
           '[/**]':
             allow-credentials: true
-            allowedOrigins: "http://localhost:3001"
+            allowedOrigins: "http://localhost:3000"
             allowedMethods: "*"
             allowedHeaders: "*"
       routes:
@@ -25,11 +25,7 @@ spring:
           uri: lb://profile
           predicates:
             - Path=/profile/**
-        - id: shop
-          uri: http://localhost:3000/
-          predicates:
-            - Path=/market-1/**
-            - Path=/_next/**
+   
   security:
     oauth2:
       client:
