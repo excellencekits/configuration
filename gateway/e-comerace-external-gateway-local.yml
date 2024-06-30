@@ -29,7 +29,7 @@ spring:
           uri: http://localhost:3000/
           predicates:
             - Path=/market-1/**
-            -Path=/_next/**
+            - Path=/_next/**
   security:
     oauth2:
       client:
