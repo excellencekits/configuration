@@ -43,3 +43,6 @@ management:
     web:
       exposure:
         include: '*'
+services:
+  imagevault: imagevault..excellencekits.com
+    private String userManagerHost;
