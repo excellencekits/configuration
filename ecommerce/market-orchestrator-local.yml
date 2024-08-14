@@ -47,5 +47,4 @@ management:
 markets-config:
   host: http://localhost:8032/
   markets:
-    - car-market
     - electronics-market
