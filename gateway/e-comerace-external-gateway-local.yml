@@ -13,7 +13,7 @@ spring:
         corsConfigurations:
           '[/**]':
             allow-credentials: true
-            allowedOrigins: "http://localhost:*"
+            allowedOrigins: "http://localhost:3001"
             allowedMethods: "*"
             allowedHeaders: "*"
       routes:
