@@ -47,3 +47,8 @@ management:
 services:
   imagevault: imagevault..excellencekits.com
     private String userManagerHost;
+custom:
+  security:
+    expose-unsecured-urls: true
+    unsecured-urls:
+      - /onboarding/captain/signupBasicProfile
