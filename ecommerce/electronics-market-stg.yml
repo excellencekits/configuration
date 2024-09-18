@@ -51,4 +51,4 @@ custom:
   security:
     expose-unsecured-urls: true
     unsecured-urls:
-      - /onboarding/captain/signupBasicProfile
+      - **/customer/**
