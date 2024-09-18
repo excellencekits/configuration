@@ -45,3 +45,8 @@ jwt:
     converter:
       resource-id: web_front_auth
       principal-attribute: preferred_username
+custom:
+  security:
+    expose-unsecured-urls: true
+    unsecured-urls:
+      - /market-orchestrator/customer/**
