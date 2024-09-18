@@ -17,7 +17,7 @@ spring:
       enabled: true
   security:
     unsecured-urls:
-      - /**
+      - /market-orchestrator/customer/**
     oauth2:
       resourceserver:
         jwt:
@@ -48,8 +48,3 @@ markets-config:
   host: http://localhost:8032/
   markets:
     - electronics-market
-custom:
-  security:
-    expose-unsecured-urls: true
-    unsecured-urls:
-      - /market-orchestrator/customer/**
