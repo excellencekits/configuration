@@ -48,3 +48,8 @@ markets-config:
   host: http://localhost:8032/
   markets:
     - electronics-market
+custom:
+  security:
+    expose-unsecured-urls: true
+    unsecured-urls:
+      - /onboarding/captain/signupBasicProfile
