@@ -50,3 +50,8 @@ jwt:
 app:
   cors:
     allowed-origins: http://localserver:3001
+custom:
+  security:
+    expose-unsecured-urls: true
+    unsecured-urls:
+      - /market-orchestrator/customer/**
