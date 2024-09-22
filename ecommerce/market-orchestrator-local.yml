@@ -18,6 +18,7 @@ spring:
   security:
     unsecured-urls:
       - /market-orchestrator/customer/**
+      - /market-orchestrator/dashboard
     oauth2:
       resourceserver:
         jwt:
