@@ -18,6 +18,8 @@ spring:
               - "http://localhost:3001"
             allowedMethods: "*"
             allowedHeaders: "*"
+            exposedHeaders: 
+              - "Location" 
       routes:
         - id: market-orchestrator
           uri: lb://market-orchestrator
