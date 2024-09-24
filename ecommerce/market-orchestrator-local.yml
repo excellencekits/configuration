@@ -17,8 +17,6 @@ spring:
       enabled: true
   security:
     unsecured-urls:
-      - /captain/signupBasicProfile  
-    unsecured-urls:
       - /customer/**
       - /dashboard
     oauth2:
