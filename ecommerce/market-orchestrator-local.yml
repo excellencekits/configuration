@@ -17,8 +17,10 @@ spring:
       enabled: true
   security:
     unsecured-urls:
-      - /market-orchestrator/customer/**
-      - /market-orchestrator/dashboard
+      - /captain/signupBasicProfile  
+    unsecured-urls:
+      - /customer/**
+      - /dashboard
     oauth2:
       resourceserver:
         jwt:
