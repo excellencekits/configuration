@@ -28,8 +28,7 @@ spring:
         - id: profile
           uri: lb://profile
           predicates:
-            - Path=/profile/**
-   
+            - Path=/profile/**   
   security:
     oauth2:
       client:
