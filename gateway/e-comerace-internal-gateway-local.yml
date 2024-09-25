@@ -6,16 +6,20 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
 spring:
   application:
-    name: e-comerace-internal-gateway
+    name: e-comerace-internal-gatewaycloud
   cloud:
     gateway:
       globalcors:
         corsConfigurations:
           '[/**]':
             allow-credentials: true
-            allowedOrigins: "http://localhost:3001"
+            allowedOrigins: 
+              - "http://localhost:3000"
+              - "http://localhost:3001"
             allowedMethods: "*"
             allowedHeaders: "*"
+            exposedHeaders: 
+              - "Location" 
       routes:
         - id: car-market
           uri: lb://car-market
@@ -25,7 +29,6 @@ spring:
           uri: lb://electronics-market
           predicates:
             - Path=/electronics-market/**
-
   security:
     oauth2:
       client:
