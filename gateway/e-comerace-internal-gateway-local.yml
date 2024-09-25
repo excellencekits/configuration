@@ -6,7 +6,7 @@ eureka:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
 spring:
   application:
-    name: e-comerace-internal-gatewaycloud
+    name: e-comerace-internal-gateway
   cloud:
     gateway:
       globalcors:
