@@ -1,7 +1,7 @@
 server:
-  port: 8033
+  port: 8081
   servlet:
-    context-path: /electronics-market
+    context-path: /profile
 eureka:
   client:
     serviceUrl:
