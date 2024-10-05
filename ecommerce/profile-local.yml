@@ -17,7 +17,7 @@ spring:
       enabled: true
   security:
     unsecured-urls:
-      - /userOnboarding/**
+      - /**
     oauth2:
       resourceserver:
         jwt:
