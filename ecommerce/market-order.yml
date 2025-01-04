@@ -1,7 +1,7 @@
 server:
   port: 8035
   servlet:
-    context-path: /marketOrder
+    context-path: /market-order
 eureka:
   client:
     serviceUrl:
