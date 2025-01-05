@@ -12,6 +12,7 @@ services:
   userprofile: http://localhost:8030/customer-profile/
 external-service:
   host:
+    name: userProfile
     url: http://localhost:8030/customer-profile/
     auth-type: session
 spring: 
