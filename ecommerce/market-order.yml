@@ -11,13 +11,17 @@ services:
   imagevault: http://image-vault.excellencekits.com/image-vault/images/
   userprofile: http://localhost:8030/customer-profile/
 external-service:
-  host:
-    name: userProfile
-    url: http://localhost:8030/customer-profile/
+  - id: userProfile
+    host: http://localhost:8030/customer-profile/
+    auth-type: session
     services:
       - name: removecart
         path: cart/delete
-    auth-type: session
+  - id: userManagment
+    host: http://stg-user-maneger.excellencekits.com
+    services:
+      - name: createUser
+        path: user/create
 spring: 
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
