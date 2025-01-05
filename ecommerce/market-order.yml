@@ -14,6 +14,10 @@ external-service:
   host:
     name: userProfile
     url: http://localhost:8030/customer-profile/
+    services:
+      service:
+        name: removecart
+        path: cart/delete
     auth-type: session
 spring: 
   zipkin:
