@@ -10,6 +10,10 @@ services:
   user-manager: http://stg-user-maneger.excellencekits.com
   imagevault: http://image-vault.excellencekits.com/image-vault/images/
   userprofile: http://localhost:8030/customer-profile/
+external-service:
+  host:
+    url: http://localhost:8030/customer-profile/
+    auth-type: session
 spring: 
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
