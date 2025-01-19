@@ -38,7 +38,11 @@ spring:
         - id: market-order
           uri: lb://market-order
           predicates:
-            - Path=/market-order/**   
+            - Path=/market-order/**  
+        - id: vendor-profile
+          uri: lb://vendor-profile
+          predicates:
+            - Path=/vendor-profile/**              
   security:
     oauth2:
       client:
