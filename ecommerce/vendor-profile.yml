@@ -23,7 +23,7 @@ spring:
         jwt:
           issuer-uri: http://stg-oauth2.excellencekits.com
   datasource:
-    url: jdbc:mysql://stg-db.excellencekits.com:3306/vendor-profile-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://stg-db.excellencekits.com:3306/ecommerce-vendor-profile-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
     password: mwdl
     hikari:
