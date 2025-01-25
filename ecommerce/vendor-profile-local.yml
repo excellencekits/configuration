@@ -21,7 +21,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://loalhost:9900
+          issuer-uri: http://localhost:9900
   datasource:
     url: jdbc:mysql://stg-db.excellencekits.com:3306/ecommerce-vendor-profile-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
