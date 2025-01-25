@@ -1,31 +1,3 @@
-server:
-  port: 9900
 services:
   oauth2:
-    url: http://stg-oauth2.excellencekits.com
-spring:
-  redis:
-    data:
-      host: stg-oauth2.excellencekits.com
-      port: 6379
-      database: auth-db
-      repositories:
-        enabled: true
-  jpa:
-    hibernate:
-      ddl-auto: none
-    #  naming:
-    #    implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
-    #    physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
-  datasource:
-    url: jdbc:mysql://stg-auth.excellencekits.com:3306/auth-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
-    username: hexa
-    password: mwdl
-logging:
-  level:
-    org:
-      springframework:
-        security: trace
+    url: http://localhost:9900
