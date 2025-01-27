@@ -46,7 +46,7 @@ management:
         include: '*'
 external-service:
   config:
-    - id: userManagment
+    - id: userManagement
       host: http://stg-user-maneger.excellencekits.com
       services:
         - name: createUser
