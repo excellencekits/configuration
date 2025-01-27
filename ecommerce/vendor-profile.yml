@@ -49,7 +49,7 @@ external-service:
     - id: userManagement
       host: http://localhost:9901
       security:
-        grant-type: clientCreditional
+        grant-type: client_credentials
         client-id: service-account-market-vendor-id
         secret: secret
       services:
