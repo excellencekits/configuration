@@ -47,11 +47,11 @@ management:
 external-service:
   config:
     - id: userManagement
-      host: http://stg-user-maneger.excellencekits.com
+      host: http://localhost:9901
       security:
         grant-type: clientCreditional
         client-id: service-account-market-vendor-id
         secret: secret
       services:
         - name: createUser
-          path: user/create
+          path: userManagement/createUser
