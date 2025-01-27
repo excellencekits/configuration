@@ -48,6 +48,10 @@ external-service:
   config:
     - id: userManagement
       host: http://stg-user-maneger.excellencekits.com
+      security:
+        grant-type: clientCreditional
+        client-id: service-account-market-vendor-id
+        secret: secret
       services:
         - name: createUser
           path: user/create
