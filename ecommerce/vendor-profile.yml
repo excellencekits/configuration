@@ -49,6 +49,7 @@ external-service:
     - id: userManagement
       host: http://localhost:9901
       security:
+        token-url: http://stg-oauth2.excellencekits.com/oauth2/token
         grant-type: client_credentials
         client-id: service-account-market-vendor-id
         secret: secret
