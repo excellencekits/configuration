@@ -50,7 +50,7 @@ external-service:
       host: http://localhost:9901
       security:
         token-url: http://stg-oauth2.excellencekits.com/oauth2/token
-        grant-type: client_credentials
+        grant-type: token
         client-id: service-account-market-vendor-id
         secret: secret
       services:
