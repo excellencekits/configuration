@@ -52,7 +52,7 @@ external-service:
       security:
         token-url: http://localhost:9900/oauth2/token
         grant-type: client_credentials
-        client-id: service-account-market-vendor-id
+        client-id: market-dev-vendor-id
         client-secret: secret
       services:
         - name: createUser
