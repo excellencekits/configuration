@@ -50,7 +50,7 @@ external-service:
     - id: userManagement
       host: http://localhost:9901
       context: 
-      security: user-manager
+      security: /user-manager
         token-url: http://localhost:9900/oauth2/token
         grant-type: client_credentials
         client-id: market-dev-vendor-id
