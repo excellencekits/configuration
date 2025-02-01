@@ -56,4 +56,4 @@ external-service:
         client-secret: secret
       services:
         - name: createUser
-          path: /userManagement/createUser
+          path: /user-manager/createUser
