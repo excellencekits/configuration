@@ -53,7 +53,7 @@ external-service:
         token-url: http://stg-oauth2.excellencekits.com/oauth2/token
         grant-type: client_credentials
         client-id: service-account-market-vendor-id
-        secret-secret: secret
+        client-secret: secret
       services:
         - name: createUser
           path: userManagement/createUser
