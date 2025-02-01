@@ -1,0 +1,30 @@
+server:
+  port: 9901
+  servlet:
+    context-path: /user-manager
+spring:
+  log:
+    level: info
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  datasource:
+    url: jdbc:mysql://stgauth.excellencekits.com:3306/auth-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: hexa
+    password: mwdl
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9900
+  kafka:
+    bootstrap-servers: stg-kafka.excellencekits.com:9092
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
+
