@@ -66,3 +66,5 @@ external-service:
       services:
         - name: createUser
           path: /account/create
+        - name: activate
+          path: /account/{id}/activate   
