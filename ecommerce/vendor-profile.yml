@@ -19,6 +19,14 @@ spring:
     unsecured-urls:
       - /signup
       - /signup/**
+    route-rules:
+      rules:
+        - path: /vendor/**
+          roles:
+            - vendor
+        - path: /admin/**
+          roles:
+            - admin      
     oauth2:
       resourceserver:
         jwt:
