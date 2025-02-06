@@ -1,2 +1,5 @@
-server:
-  port: 8035
+spring: 
+  oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9900
