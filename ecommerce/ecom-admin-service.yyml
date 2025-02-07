@@ -1,0 +1,70 @@
+server:
+  port: 8037
+  servlet:
+    context-path: /vendor-profile
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+services:  
+  user-manager: http://stg-user-maneger.excellencekits.com
+  imagevault: http://image-vault.excellencekits.com/image-vault/images/
+spring: 
+  zipkin:
+    base-url: stg-zipkin.excellencekits.com:9411
+  cloud:
+    compatibility-verifier:
+      enabled: true
+  security:
+    unsecured-urls:
+      - /signup
+      - /signup/**
+    route-rules:
+      rules:
+        - path: /vendor/**
+          roles:
+            - vendor
+        - path: /admin/**
+          roles:
+            - admin      
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://stg-oauth2.excellencekits.com
+  datasource:
+    url: jdbc:mysql://stg-db.excellencekits.com:3306/ecommerce-admin-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: hexa
+    password: mwdl
+    hikari:
+      maximum-pool-size: 10
+      idle-timeout: 30000
+      max-lifetime: 1800000
+  log:
+    level: info
+config:
+  kafka:
+    enabled: true
+    producer: true
+management:
+  zipkin:
+    tracing:
+      endpoint: stg-zipkin.excellencekits.com:9411/api/v2/spans  
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+external-service:
+  config:
+    - id: userManagement
+      host: http://localhost:9901
+      context: /user-manager 
+      security: 
+        token-url: http://localhost:9900/oauth2/token
+        grant-type: client_credentials
+        client-id: market-dev-vendor-id
+        client-secret: secret
+      services:
+        - name: createUser
+          path: /account/create
+        - name: activate
+          path: /account/{id}/activate   
