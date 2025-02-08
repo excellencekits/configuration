@@ -6,9 +6,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-services:  
-  user-manager: http://stg-user-maneger.excellencekits.com
-  imagevault: http://image-vault.excellencekits.com/image-vault/images/
 spring: 
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
@@ -56,10 +53,10 @@ management:
 external-service:
   config:
     - id: userManagement
-      host: http://localhost:9901
+      host: http://stg-user-maneger.excellencekits.com
       context: /user-manager 
       security: 
-        token-url: http://localhost:9900/oauth2/token
+        token-url: http://stg-oauth2.excellencekits.com/oauth2/token
         grant-type: client_credentials
         client-id: market-dev-vendor-id
         client-secret: secret
