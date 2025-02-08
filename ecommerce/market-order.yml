@@ -6,23 +6,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-services:  
-  user-manager: http://stg-user-maneger.excellencekits.com
-  imagevault: http://image-vault.excellencekits.com/image-vault/images/
-  userprofile: http://localhost:8030/customer-profile/
-external-service:
-  config:
-    - id: userProfile
-      host: http://localhost:8030/customer-profile/
-      auth-type: session
-      services:
-        - name: removecart
-          path: cart/delete
-    - id: userManagment
-      host: http://stg-user-maneger.excellencekits.com
-      services:
-        - name: createUser
-          path: user/create
 spring: 
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
@@ -58,3 +41,14 @@ management:
     web:
       exposure:
         include: '*'
+external-service:
+  config:
+    - id: customerprofile
+      host: customer-profile
+      context: /
+      security: 
+        token-url: http://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: token
+      services:
+        - name: removecart
+          path: cart/delete
