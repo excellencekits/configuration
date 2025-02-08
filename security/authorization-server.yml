@@ -24,6 +24,14 @@ spring:
     url: jdbc:mysql://stg-auth.excellencekits.com:3306/auth-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
     password: mwdl
+  security:
+    allowedHosts:
+      - http://localhost:3000
+      - http://localhost:3001
+      - http://localhost:3002
+      - http://localhost:3003
+      - http://excellencekits.com
+
 logging:
   level:
     org:
