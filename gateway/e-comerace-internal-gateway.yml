@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+      defaultZone: ${EUREKA_URI:http://cloud-discovery:8761/eureka}
 spring:
   application:
     name: e-comerace-internal-gateway
