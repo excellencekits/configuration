@@ -17,6 +17,7 @@ spring:
               - "http://localhost:3000"
               - "http://localhost:3001"
               - "http://adminmarket.excellencekits.com"
+              - "http://market.excellencekits.com"
             allowedMethods: "*"
             allowedHeaders: "*"
             exposedHeaders: 
