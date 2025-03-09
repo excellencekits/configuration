@@ -46,7 +46,7 @@ management:
       exposure:
         include: '*'
 markets-config:
-  host: http://localhost:8032/
+  host: http://cgw-e-comerace-internal-gateway:8032/
   markets:
     - electronics-market
 custom:
