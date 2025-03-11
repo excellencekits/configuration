@@ -7,6 +7,9 @@ eureka:
 spring:
   application:
     name: e-comerace-external-gateway
+  log:
+    level: info
+    format: json 
   cloud:
     gateway:
       globalcors:
