@@ -2,7 +2,7 @@ server:
   port: 8033
 spring: 
   log:
-    format: jsonoauth2:
+    format: text:
   oauth2:
       resourceserver:
         jwt:
