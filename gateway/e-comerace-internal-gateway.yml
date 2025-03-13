@@ -7,6 +7,8 @@ eureka:
 spring:
   application:
     name: e-comerace-internal-gateway
+  zipkin:
+    base-url: stg-zipkin.excellencekits.com:9411
   log:
     level: info
     format: json  
