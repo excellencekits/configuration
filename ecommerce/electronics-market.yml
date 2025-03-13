@@ -8,7 +8,7 @@ eureka:
       defaultZone: ${EUREKA_URI:http://cloud-discovery:8761/eureka}
 services:  
   user-manager: http://stg-user-maneger.excellencekits.com
-  imagevault: http://image-vault.excellencekits.com/image-vault/images/
+  imagevault: http://image-vault.excellencekits.com/images/images/
 spring: 
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
