@@ -10,7 +10,7 @@ spring:
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
   log:
-    level: info
+    level: Debug
     format: json  
   cloud:
     gateway:
