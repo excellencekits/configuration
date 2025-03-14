@@ -58,4 +58,4 @@ config:
       - name: createUser
         path: /account/create
       - name: updateUser
-        path: /account      
+        path: /account/      
