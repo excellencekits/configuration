@@ -45,17 +45,18 @@ management:
     web:
       exposure:
         include: '*'
-config:
-  - id: userManagement
-    host: http://stg-user-maneger.excellencekits.com
-    context: /user-manager 
-    security: 
-      token-url: http://stg-oauth2.excellencekits.com/oauth2/token
-      grant-type: client_credentials
-      client-id: market-dev-vendor-id
-      client-secret: secret
-     services:
-      - name: createUser
-        path: /account/create
-      - name: updateUser
-        path: /account/      
+external-service:
+  config:
+    - id: userManagement
+      host: http://stg-user-maneger.excellencekits.com
+      context: /user-manager 
+      security: 
+        token-url: http://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: client_credentials
+        client-id: market-dev-vendor-id
+        client-secret: secret
+      services:
+        - name: createUser
+          path: /account/create
+        - name: updateUser
+          path: /account/
