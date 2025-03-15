@@ -9,10 +9,6 @@ spring:
     name: e-comerace-external-gateway
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
-  management:
-  zipkin:
-    tracing:
-      endpoint: stg-zipkin.excellencekits.com:9411/api/v2/spans  
   log:
     level: info
     format: json 
@@ -73,6 +69,10 @@ jwt:
     converter:
       resource-id: web_front_auth
       principal-attribute: preferred_username
+management:
+  zipkin:
+    tracing:
+      endpoint: stg-zipkin.excellencekits.com:9411/api/v2/spans  
 custom:
   security:
     expose-unsecured-urls: true
