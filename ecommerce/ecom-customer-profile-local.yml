@@ -1,2 +1,5 @@
 server:
   port: 8034
+  log:
+    level: info
+    format: json
