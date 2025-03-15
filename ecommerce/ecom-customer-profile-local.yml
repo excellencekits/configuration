@@ -3,4 +3,4 @@ server:
 spring:
   log:
     level: info
-    format: json
+    format: text
