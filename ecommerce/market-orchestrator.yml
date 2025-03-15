@@ -19,6 +19,7 @@ spring:
     unsecured-urls:
       - /customer/**
       - /dashboard
+      - /config/markets
     oauth2:
       resourceserver:
         jwt:
