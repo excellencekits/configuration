@@ -39,7 +39,7 @@ spring:
           predicates:
             - Path=/profile/** 
         - id: ecom-customer-profile
-          uri: lb://customer-profile
+          uri: lb://ecom-customer-profile
           predicates:
             - Path=/customer-profile/**   
         - id: market-order
