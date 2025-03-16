@@ -27,7 +27,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://stg-oauth2.excellencekits.com
+          issuer-uri: https://stg-oauth2.excellencekits.com
   datasource:
     url: jdbc:mysql://stg-db.excellencekits.com:3306/ecommerce-vendor-profile-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
@@ -54,10 +54,10 @@ management:
 external-service:
   config:
     - id: userManagement
-      host: http://stg-user-maneger.excellencekits.com
+      host: https://stg-user-maneger.excellencekits.com
       context: /user-manager 
       security: 
-        token-url: http://stg-oauth2.excellencekits.com/oauth2/token
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
         grant-type: client_credentials
         client-id: market-dev-vendor-id
         client-secret: secret
