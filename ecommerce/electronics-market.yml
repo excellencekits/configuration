@@ -7,8 +7,8 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://cloud-discovery:8761/eureka}
 services:  
-  user-manager: http://stg-user-maneger.excellencekits.com
-  imagevault: http://image-vault.excellencekits.com/images/images/
+  user-manager: https://stg-user-maneger.excellencekits.com
+  imagevault: https://image-vault.excellencekits.com/images/images/
 spring: 
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
@@ -21,7 +21,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://stg-oauth2.excellencekits.com
+          issuer-uri: https://stg-oauth2.excellencekits.com
   datasource:
     url: jdbc:mysql://stg-db.excellencekits.com:3306/electronics-market-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
