@@ -18,7 +18,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://stg-oauth2.excellencekits.com
+          issuer-uri: https://stg-oauth2.excellencekits.com
   datasource:
     url: jdbc:mysql://stg-db.excellencekits.com:3306/ecommerce-order-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
@@ -48,7 +48,7 @@ external-service:
       host: customer-profile
       context: /
       security: 
-        token-url: http://stg-oauth2.excellencekits.com/oauth2/token
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
         grant-type: token
       services:
         - name: removecart
