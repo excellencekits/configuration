@@ -48,7 +48,7 @@ management:
 external-service:
   config:
     - id: userManagement
-      host: https://stg-user-maneger.excellencekits.com
+      host: http://stg-user-maneger.excellencekits.com
       context: /user-manager 
       security: 
         token-url: https://stg-oauth2.excellencekits.com/oauth2/token
