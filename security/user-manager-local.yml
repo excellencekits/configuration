@@ -5,6 +5,7 @@ server:
 spring:
   log:
     level: info
+    format: text
   jpa:
     hibernate:
       ddl-auto: none
