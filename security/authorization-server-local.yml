@@ -1,3 +1,2 @@
-services:
-  oauth2:
-    url: http://localhost:9900
+server:
+ port: 9900
