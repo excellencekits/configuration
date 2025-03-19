@@ -12,9 +12,6 @@ spring:
   cloud:
     compatibility-verifier:
       enabled: true
-  security:
-    unsecured-urls:
-      - /customer/**
     oauth2:
       resourceserver:
         jwt:
