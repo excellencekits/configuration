@@ -1,5 +1,2 @@
 server:
-  port: 9900
-services:
-  oauth2:
-    url: https://stg-oauth2.excellencekits.com
+ port: 9900
