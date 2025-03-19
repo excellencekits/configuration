@@ -20,7 +20,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:9900
+          issuer-uri: http://stg-oauth2.excellencekits.com
   kafka:
     bootstrap-servers: stg-kafka.excellencekits.com:9092
 logging:
