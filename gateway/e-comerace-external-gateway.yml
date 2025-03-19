@@ -4,6 +4,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://cloud-discovery:8761/eureka}
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
 spring:
   application:
     name: e-comerace-external-gateway
