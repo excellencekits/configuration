@@ -9,7 +9,7 @@ eureka:
 spring:
   log:
     level: info
-    format: json
+    format: text
   jpa:
     hibernate:
       ddl-auto: none
