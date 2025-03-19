@@ -45,7 +45,7 @@ management:
 external-service:
   config:
     - id: customerprofile
-      host: customer-profile
+      host: ecom-customer-profile
       context: /
       security: 
         token-url: https://stg-oauth2.excellencekits.com/oauth2/token
