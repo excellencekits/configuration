@@ -6,14 +6,14 @@ eureka:
       defaultZone: ${EUREKA_URI:http://cloud-discovery:8761/eureka}
 logging:
   level:
-    org.springframework.cloud.gateway: DEBUG
+    org.springframework.cloud.gateway: info
 spring:
   application:
     name: e-comerace-external-gateway
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
   log:
-    level: DEBUG
+    level: info
     format: json 
   cloud:
     gateway:
