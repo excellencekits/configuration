@@ -43,8 +43,8 @@ management:
 external-service:
   config:
     - id: customerprofile
-      host: http://ecom-customer-profile
-      context: /
+      host: https://marketapi.excellencekits.com/
+      context: /customer-profile/
       security: 
         token-url: https://stg-oauth2.excellencekits.com/oauth2/token
         grant-type: token
