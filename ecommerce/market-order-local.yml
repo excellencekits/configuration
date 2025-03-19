@@ -1,4 +1,3 @@
-spring:  
+spring: 
   log:
-    level: info
     format: text
