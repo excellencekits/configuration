@@ -12,10 +12,10 @@ spring:
   cloud:
     compatibility-verifier:
       enabled: true
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: https://stg-oauth2.excellencekits.com
+  oauth2:
+    resourceserver:
+      jwt:
+        issuer-uri: https://stg-oauth2.excellencekits.com
   datasource:
     url: jdbc:mysql://stg-db.excellencekits.com:3306/ecommerce-order-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
