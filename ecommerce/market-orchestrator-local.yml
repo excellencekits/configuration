@@ -1,2 +1,7 @@
 server:
   port: 8031
+spring:
+  log:
+    format: text
+marketsplaces-config:
+  host: http://localhost:8032/    
