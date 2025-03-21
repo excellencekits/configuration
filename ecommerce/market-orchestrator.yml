@@ -50,7 +50,9 @@ management:
 markets-config:
   host: http://cgw-e-comerace-internal-gateway:8032/
   markets:
-    - electronics-market
+    - id: electronics-market
+      name: name
+      icon: device
 custom:
   security:
     expose-unsecured-urls: true
