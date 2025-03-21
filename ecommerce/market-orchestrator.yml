@@ -50,7 +50,7 @@ management:
 markets-config:
   host: http://cgw-e-comerace-internal-gateway:8032/
   markets-places:
-    - id: electronics-market
+    - context: electronics-market
       name: name
       icon: device
 custom:
