@@ -1,3 +1,5 @@
+app:
+  name: Electonics
 server:
   port: 8033
   servlet:
