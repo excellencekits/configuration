@@ -47,7 +47,7 @@ management:
     web:
       exposure:
         include: '*'
-markets-config:
+marketsPlaces-config:
   host: http://cgw-e-comerace-internal-gateway:8032/
   markets-places:
     - context: electronics-market
