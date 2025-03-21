@@ -49,7 +49,7 @@ management:
         include: '*'
 markets-config:
   host: http://cgw-e-comerace-internal-gateway:8032/
-  markets:
+  markets-places:
     - id: electronics-market
       name: name
       icon: device
