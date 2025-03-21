@@ -20,6 +20,7 @@ spring:
       - /customer/**
       - /dashboard
       - /config/markets
+      - /autoComplete
     oauth2:
       resourceserver:
         jwt:
