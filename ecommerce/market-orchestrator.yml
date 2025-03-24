@@ -52,7 +52,7 @@ marketsplaces-config:
   host: http://cgw-e-comerace-internal-gateway:8032/
   markets-places:
     - context: electronics-market
-      name: name
+      name: Electronics
       icon: device
 custom:
   security:
