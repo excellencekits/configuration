@@ -36,6 +36,10 @@ spring:
           uri: lb://electronics-market
           predicates:
             - Path=/electronics-market/**
+        - id: fashion-market
+          uri: lb://fashion-market
+          predicates:
+            - Path=/fashion-market/**
   security:
     oauth2:
       client:
