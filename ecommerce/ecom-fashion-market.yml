@@ -1,0 +1,50 @@
+app:
+  name: Fashion
+server:
+  port: 8050
+  servlet:
+    context-path: /fashion-market
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://cloud-discovery:8761/eureka}
+services:  
+  user-manager: https://stg-user-maneger.excellencekits.com
+  imagevault: https://image-vault.excellencekits.com/images/images/
+spring: 
+  zipkin:
+    base-url: stg-zipkin.excellencekits.com:9411
+  cloud:
+    compatibility-verifier:
+      enabled: true
+  security:
+    unsecured-urls:
+      - /customer/**
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://stg-oauth2.excellencekits.com
+  datasource:
+    url: jdbc:mysql://stg-db.excellencekits.com:3306/ecom-fashion-market-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: hexa
+    password: mwdl
+    hikari:
+      maximum-pool-size: 10
+      idle-timeout: 30000
+      max-lifetime: 1800000
+  log:
+    level: info
+    format: json
+config:
+  kafka:
+    enabled: true
+    producer: true
+management:
+  zipkin:
+    tracing:
+      endpoint: stg-zipkin.excellencekits.com:9411/api/v2/spans  
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  
