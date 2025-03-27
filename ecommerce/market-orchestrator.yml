@@ -54,6 +54,9 @@ marketsplaces-config:
     - context: electronics-market
       name: Electronics
       icon: device
+    - context: fashion-market
+      name: Fashion
+      icon: shirt
 custom:
   security:
     expose-unsecured-urls: true
