@@ -37,7 +37,7 @@ spring:
           predicates:
             - Path=/electronics-market/**
         - id: fashion-market
-          uri: lb://fashion-market
+          uri: lb://ecom-fashion-market
           predicates:
             - Path=/fashion-market/**
   security:
