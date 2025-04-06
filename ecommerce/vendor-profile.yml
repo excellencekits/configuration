@@ -16,7 +16,7 @@ spring:
     unsecured-urls:
       - /signup
       - /signup/**
-      - /common
+      - /common/**
     route-rules:
       rules:
         - path: /vendor/**
