@@ -67,3 +67,5 @@ external-service:
           path: /account/create
         - name: activate
           path: /account/{id}/activate   
+services:  
+  imagevault: https://image-vault.excellencekits.com/images/images/
