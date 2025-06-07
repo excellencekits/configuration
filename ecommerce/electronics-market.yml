@@ -57,4 +57,4 @@ external-service:
         grant-type: token
       services:
         - name: profileInfo
-          path: info   
+          path: profile/info   
