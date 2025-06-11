@@ -26,7 +26,7 @@ spring:
               - "http://localhost:3001"
               - "http://localhost:3002"
               - "https://market.excellencekits.com"
-              - "https://adminmarket.excellencekits.com"
+              - "https://marketadmin.excellencekits.com"
               - "https://vendormarket.excellencekits.com"
             allowedMethods: "*"
             allowedHeaders: "*"
