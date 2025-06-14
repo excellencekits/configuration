@@ -28,6 +28,7 @@ spring:
               - "https://market.excellencekits.com"
               - "https://adminmarket.excellencekits.com"
               - "https://vendormarket.excellencekits.com"
+              - "https://vendermarket.excellencekits.com"
             allowedMethods: "*"
             allowedHeaders: "*"
             exposedHeaders: 
