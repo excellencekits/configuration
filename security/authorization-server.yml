@@ -33,7 +33,7 @@ spring:
       - https://market.excellencekits.com
       - https://stg-oauth2.excellencekits.com
       - https://adminmarket.excellencekits.com
-      - https://vendermarket.excellencekits.com
+      - https://vendormarket.excellencekits.com
 
 log:
     level: info
