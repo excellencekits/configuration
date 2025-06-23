@@ -9,3 +9,10 @@ spring:
             client-id: 839249891904-247nnj1o8ntc8np21ikfnp38gbvg2ht0.apps.googleusercontent.com
             client-secret: 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
             scope: openid, email, profile
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            user-name-attribute: sub
