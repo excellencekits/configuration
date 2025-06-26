@@ -9,7 +9,7 @@ spring:
             client-id: 839249891904-247nnj1o8ntc8np21ikfnp38gbvg2ht0.apps.googleusercontent.com
             client-secret: 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
             scope: openid, email, profile
-            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            redirect-uri: "https://stg-oauth2.excellencekits.com/login/oauth2/code/{registrationId}"
         provider:
           google:
             authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
