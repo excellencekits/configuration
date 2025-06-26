@@ -1,2 +1,9 @@
 server:
  port: 9900
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            redirect-uri: "http://localost:9900/login/oauth2/code/{registrationId}"
