@@ -6,4 +6,4 @@ spring:
       client:
         registration:
           google:
-            redirect-uri: "http://localost:9900/login/oauth2/code/{registrationId}"
+            redirect-uri: "http://localhost:9900/login/oauth2/code/{registrationId}"
