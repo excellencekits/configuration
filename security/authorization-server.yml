@@ -1,15 +1,15 @@
 server:
   port: 9900
-services:
-  oauth2:
-    url: https://stg-oauth2.excellencekits.com
+config:
+  issuer-url: https://stg-oauth2.excellencekits.com
+  google-android-audience-key: 
 spring:
   redis:
     data:
       host: stg-oauth2.excellencekits.com
       port: 6379
       database: auth-db
-      repositories:
+      repositories: 1042583938634-gt1h8eckifrrlghkk3ejncjmmlqa4fak.apps.googleusercontent.com
         enabled: true
   jpa:
     hibernate:
