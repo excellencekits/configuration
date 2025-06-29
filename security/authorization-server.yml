@@ -31,7 +31,10 @@ spring:
           google:
             client-id: 1042583938634-gt1h8eckifrrlghkk3ejncjmmlqa4fak.apps.googleusercontent.com
             client-secret: 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
-            scope: openid, email, profile
+            scope: 
+              - openid
+              - email
+              - profile
         provider:
           google:
             authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
