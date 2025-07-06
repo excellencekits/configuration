@@ -1,3 +1,5 @@
+project:
+  name: e-commerce
 server:
   port: 8034
   servlet:
