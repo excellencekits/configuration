@@ -1,5 +1,7 @@
 app:
   name: Electonics
+project:
+  name: e-commerce  
 server:
   port: 8033
   servlet:
