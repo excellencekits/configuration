@@ -1,5 +1,7 @@
 app:
   name: Fashion
+project:
+  name: e-commerce  
 server:
   port: 8050
   servlet:
