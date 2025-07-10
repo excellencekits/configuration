@@ -53,3 +53,5 @@ external-service:
       services:
         - name: removecart
           path: cart/delete
+services:  
+  imagevault: https://image-vault.excellencekits.com/images/images/
