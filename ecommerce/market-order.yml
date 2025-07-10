@@ -6,7 +6,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://cloud-discovery:8761/eureka}
-application:
+project:
   name: e-commerce
 spring: 
   zipkin:
