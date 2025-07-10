@@ -6,6 +6,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://cloud-discovery:8761/eureka}
+application:
+  name: e-commerce
 spring: 
   zipkin:
     base-url: stg-zipkin.excellencekits.com:9411
