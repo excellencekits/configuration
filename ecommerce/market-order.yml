@@ -56,6 +56,8 @@ external-service:
     - id: marketService
       host: https://marketapi.excellencekits.com/
       context: /market-orchestrator/
+      headers:
+        - X-context-Header
       security: 
         token-url: https://stg-oauth2.excellencekits.com/oauth2/token
         grant-type: token
