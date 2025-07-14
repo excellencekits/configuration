@@ -53,5 +53,14 @@ external-service:
       services:
         - name: removecart
           path: cart/delete
+    - id: marketService
+      host: https://marketapi.excellencekits.com/
+      context: /market-orchestrator/
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: token
+      services:
+        - name: productListDetails
+          path: customer/productDetails/vo     
 services:  
   imagevault: https://image-vault.excellencekits.com/images/images/
