@@ -60,7 +60,7 @@ external-service:
         token-url: https://stg-oauth2.excellencekits.com/oauth2/token
         grant-type: token
       services:
-        - name: productListDetails
+        - name: productVoListDetails
           path: customer/productDetails/vo     
 services:  
   imagevault: https://image-vault.excellencekits.com/images/images/
