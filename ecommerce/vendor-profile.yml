@@ -1,6 +1,5 @@
 project:
   name: e-commerce
-
 server:
   port: 8037
   servlet:
