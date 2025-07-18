@@ -1,0 +1,37 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+services:  
+  user-manager: http://stg-user-maneger.excellencekits.com
+spring: 
+  web:
+    cors:
+      allowed-origins: "http://localhost:3000, http://localhost:3001"  # Allow specific origins
+      allowed-methods: GET, POST, PUT, DELETE  # Allow specific HTTP methods
+      allowed-headers: "*"  # Allow all headers
+      allow-credentials: true  # Allow cookies and credentials
+      max-age: 3600  # Cache the CORS response for 1 hour
+  zipkin:
+    base-url: stg-zipkin.excellencekits.com:9411
+  cloud:
+    compatibility-verifier:
+      enabled: true
+  security:
+    unsecured-urls:
+      - /**
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://stg-oauth2.excellencekits.com
+  log:
+    level: info
+management:
+  zipkin:
+    tracing:
+      endpoint: stg-zipkin.excellencekits.com:9411/api/v2/spans  
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+image-directory: /Users/elmustafafriri/work/com/img
