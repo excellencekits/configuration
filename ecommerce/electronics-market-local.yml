@@ -3,3 +3,5 @@ server:
 spring: 
   log:
     format: text
+services:  
+  imagevault: http://localhost:8080/images/images/
