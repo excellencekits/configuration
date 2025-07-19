@@ -62,7 +62,7 @@ external-service:
 images-service-config:
   enable: true
   project-base-directory: e-commerce
-  server-url: http://localhost:8030/images/images/
+  server-url: http://localhost:8030/images/images
   entities:
     - entity: item
       variants:
