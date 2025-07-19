@@ -61,8 +61,7 @@ external-service:
           path: profile/info   
 images-service-config:
   enable: true
-  project-name: e-commerce
-  project-name: e-commerce
+  project-base-directory: e-commerce
   server-url: http://localhost:8030/images/images/
   entities:
     - entity: item
