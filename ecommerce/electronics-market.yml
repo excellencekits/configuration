@@ -1,7 +1,5 @@
 app:
   name: Electonics
-project:
-  name: e-commerce  
 server:
   port: 8033
   servlet:
@@ -63,7 +61,8 @@ external-service:
           path: profile/info   
 images-service-config:
   enable: true
-  application-base-directory: e-commerce
+  project-name: e-commerce
+  project-name: e-commerce
   server-url: http://localhost:8030/images/images/
   entities:
     - entity: item
