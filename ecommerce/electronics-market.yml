@@ -61,3 +61,28 @@ external-service:
       services:
         - name: profileInfo
           path: profile/info   
+images-services:
+  enable: true
+  server-url: http://localhost:8030/images/images/
+  entities:
+    - type: item
+      variants:
+        - variant: large
+          size: 800
+        - variant: medium
+          size: 400
+        - variant: thumbnail
+          size: 200
+        - variant: small
+          size: 100
+    - type: category
+      variants:
+        - variant: large
+          size: 800
+        - variant: medium
+          size: 400
+        - variant: thumbnail
+          size: 200
+        - variant: small
+          size: 100
+  
