@@ -78,7 +78,7 @@ images-service-config:
         - variant: small
           size: 100
           enable: true
-    - entity: category
+    - entity: categoryItem
       variants:
         - variant: large
           size: 800
