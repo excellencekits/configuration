@@ -61,7 +61,7 @@ external-service:
       services:
         - name: profileInfo
           path: profile/info   
-images-services:
+images-service-config:
   enable: true
   application-base-directory: e-commerce
   server-url: http://localhost:8030/images/images/
