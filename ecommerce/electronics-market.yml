@@ -70,20 +70,28 @@ images-services:
       variants:
         - variant: large
           size: 800
+          enable: true
         - variant: medium
           size: 400
+          enable: true
         - variant: thumbnail
           size: 200
+          enable: true
         - variant: small
           size: 100
+          enable: true
     - entity: category
       variants:
         - variant: large
           size: 800
+          enable: true
         - variant: medium
           size: 400
+          enable: true
         - variant: thumbnail
           size: 200
+          enable: true
         - variant: small
           size: 100
+          enable: true
   
