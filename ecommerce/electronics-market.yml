@@ -62,7 +62,7 @@ external-service:
 images-service-config:
   enable: true
   project-base-directory: e-commerce
-  server-url: http://localhost:8080/images
+  server-url: https://image-vault.excellencekits.com/images
   entities:
     - entity: item
       variants:
