@@ -64,4 +64,4 @@ images-service-config:
   project-base-directory: e-commerce
   server-url: https://image-vault.excellencekits.com/images
   entities:
-    - entity: customer  
+    - entity: customers  
