@@ -59,5 +59,9 @@ external-service:
           path: /account/create
         - name: updateUser
           path: /account/
-services:  
-  imagevault: https://image-vault.excellencekits.com/images/images/
+images-service-config:
+  enable: true
+  project-base-directory: e-commerce
+  server-url: https://image-vault.excellencekits.com/images
+  entities:
+    - entity: customer  
