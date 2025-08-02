@@ -63,6 +63,15 @@ external-service:
         grant-type: token
       services:
         - name: productVoListDetails
-          path: customer/productDetails/vo     
+          path: customer/productDetails/vo
+    - id: vendorProfileService
+      host: https://marketapi.excellencekits.com/
+      context: /vendor-profile/
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: token
+      services:
+        - name: storeLocationService
+          path: webhook/storesLocation         
 services:  
   imagevault: https://image-vault.excellencekits.com/images/images/
