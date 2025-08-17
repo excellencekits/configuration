@@ -64,6 +64,8 @@ external-service:
       services:
         - name: productVoListDetails
           path: customer/productDetails/vo
+        - name: updateItemSoldCount
+          path: customer/productDetails/updateItemSoldCount          
     - id: vendorProfileService
       host: https://marketapi.excellencekits.com/
       context: /vendor-profile/
