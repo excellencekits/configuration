@@ -16,7 +16,7 @@ spring:
       enabled: true
   security:
     unsecured-urls:
-      - /profile/save
+      - signup
     oauth2:
       resourceserver:
         jwt:
