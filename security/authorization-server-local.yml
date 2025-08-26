@@ -1,5 +1,7 @@
 server:
  port: 9900
+config:
+  issuer-url: http://localhost:9900
 spring:
   security:
     oauth2:
