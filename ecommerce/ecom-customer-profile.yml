@@ -55,7 +55,7 @@ external-service:
         client-id: market-dev-customer-id
         client-secret: secret
       services:
-        - name: accountInfo
+        - name: userDetails
           path: "/account/info/{userId}"
         - name: createUser
           path: "/account/create"
