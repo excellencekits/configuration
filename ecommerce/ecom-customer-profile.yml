@@ -55,12 +55,12 @@ external-service:
         client-id: market-dev-customer-id
         client-secret: secret
       services:
+        - name: accountInfo
+          path: /account/info/{userId}
         - name: createUser
           path: /account/create
         - name: updateUser
           path: /account/
-        - name: accountInfo
-          path: /account/info/{userId}       
 images-service-config:
   enable: true
   project-base-directory: e-commerce
