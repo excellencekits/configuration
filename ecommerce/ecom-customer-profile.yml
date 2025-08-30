@@ -60,7 +60,7 @@ external-service:
         - name: updateUser
           path: /account/
         - name: profileInfo
-          path: /account/info          
+          path: /account/info/{userId}       
 images-service-config:
   enable: true
   project-base-directory: e-commerce
