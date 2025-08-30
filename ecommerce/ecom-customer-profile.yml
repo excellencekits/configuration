@@ -59,7 +59,7 @@ external-service:
           path: /account/create
         - name: updateUser
           path: /account/
-        - name: userProfile
+        - name: accountInfo
           path: /account/info/{userId}       
 images-service-config:
   enable: true
