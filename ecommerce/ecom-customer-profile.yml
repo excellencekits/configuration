@@ -59,6 +59,8 @@ external-service:
           path: /account/create
         - name: updateUser
           path: /account/
+        - name: profileInfo
+          path: /account/info          
 images-service-config:
   enable: true
   project-base-directory: e-commerce
