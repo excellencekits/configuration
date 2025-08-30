@@ -56,11 +56,11 @@ external-service:
         client-secret: secret
       services:
         - name: accountInfo
-          path: /account/info/{userId}
+          path: "/account/info/{userId}"
         - name: createUser
-          path: /account/create
+          path: "/account/create"
         - name: updateUser
-          path: /account/
+          path: "/account/"
 images-service-config:
   enable: true
   project-base-directory: e-commerce
