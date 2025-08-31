@@ -4,3 +4,20 @@ spring:
   log:
     level: info
     format: text
+external-service:
+  config:
+    - id: userManagement
+      host: http://localhost:9901
+      context: /user-manager 
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: client_credentials
+        client-id: market-dev-customer-id
+        client-secret: secret
+      services:
+        - name: userDetails
+          path: "/account/info"
+        - name: createUser
+          path: "/account/create"
+        - name: updateUser
+          path: "/account/"      
