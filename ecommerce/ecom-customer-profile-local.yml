@@ -16,7 +16,7 @@ external-service:
         client-secret: secret
       services:
         - name: userDetails
-          path: "/account/info"
+          path: "/account/info/{userId}"
         - name: createUser
           path: "/account/create"
         - name: updateUser
