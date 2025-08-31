@@ -57,7 +57,7 @@ external-service:
       services:
         - name: userDetails
           path: "/account/info/{userId}"
-       - name: createUser
+        - name: createUser
           path: "/account/create"
         - name: updateUser
           path: "/account/"   
