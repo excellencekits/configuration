@@ -54,6 +54,7 @@ marketsplaces-config:
     - context: electronics-market
       name: Electronics
       icon: device
+      active: true
     - context: fashion-market
       name: Fashion
       icon: shirt
