@@ -48,5 +48,57 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*'
-  
+        include: '*' 
+external-service:
+  config:
+    - id: vendorProfile
+      host: https://marketapi.excellencekits.com/
+      context: /vendor-profile/
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: token
+      services:
+        - name: profileInfo
+          path: profile/info  
+    - id: customerProfile
+      host: https://marketapi.excellencekits.com/
+      context: /customer-profile/
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: token
+      services:
+        - name: profileInfo
+          path: profile          
+images-service-config:
+  enable: true
+  project-base-directory: e-commerce
+  server-url: https://image-vault.excellencekits.com/images
+  entities:
+    - entity: item
+      variants:
+        - variant: large
+          size: 800
+          enable: true
+        - variant: medium
+          size: 400
+          enable: true
+        - variant: thumbnail
+          size: 200
+          enable: true
+        - variant: small
+          size: 100
+          enable: true
+    - entity: categoryItem
+      variants:
+        - variant: large
+          size: 800
+          enable: true
+        - variant: medium
+          size: 400
+          enable: true
+        - variant: thumbnail
+          size: 200
+          enable: true
+        - variant: small
+          size: 100
+          enable: true
