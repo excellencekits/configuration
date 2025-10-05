@@ -1,5 +1,6 @@
 app:
   name: Electonics
+  icon: LaptopMobile
 server:
   port: 8033
   servlet:
