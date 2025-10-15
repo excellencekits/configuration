@@ -58,16 +58,16 @@ marketsplaces-config:
     - context: fashion-market
       name: Fashion
       icon: Vest
-   - context: car-market
+    - context: car-market
       name: Cars
       icon: Car
-  - context: properties-market
+    - context: properties-market
       name: Properties
       icon: Home    
-  - context: stationary-market
+    - context: stationary-market
       name: Stationary
       icon: Pen 
-  - context: furniture-market
+    - context: furniture-market
       name: Furniture
       icon: Furniture      
 custom:
