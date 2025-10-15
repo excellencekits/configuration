@@ -57,7 +57,7 @@ marketsplaces-config:
       active: true
     - context: fashion-market
       name: Fashion
-      icon: Vest
+      icon: Dress
     - context: car-market
       name: Cars
       icon: Car
