@@ -53,11 +53,23 @@ marketsplaces-config:
   markets-places:
     - context: electronics-market
       name: Electronics
-      icon: device
+      icon: Laptop
       active: true
     - context: fashion-market
       name: Fashion
-      icon: shirt
+      icon: Vest
+   - context: car-market
+      name: Cars
+      icon: Car
+  - context: properties-market
+      name: Properties
+      icon: Home    
+  - context: stationary-market
+      name: Stationary
+      icon: Pen 
+  - context: furniture-market
+      name: Furniture
+      icon: Furniture      
 custom:
   security:
     expose-unsecured-urls: true
