@@ -1,0 +1,105 @@
+app:
+  name: Properties
+  icon: Home
+server:
+  port: 8036
+  servlet:
+    context-path: /properties-market
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://cloud-discovery:8761/eureka}
+services:  
+  user-manager: https://stg-user-maneger.excellencekits.com
+  imagevault: https://image-vault.excellencekits.com/images/images/
+
+spring: 
+  zipkin:
+    base-url: stg-zipkin.excellencekits.com:9411
+  cloud:
+    compatibility-verifier:
+      enabled: true
+  security:
+    unsecured-urls:
+      - /customer/**
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://stg-oauth2.excellencekits.com
+  datasource:
+    url: jdbc:mysql://stg-db.excellencekits.com:3306/ecom-cars-market-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: hexa
+    password: mwdl
+    hikari:
+      maximum-pool-size: 10
+      idle-timeout: 30000
+      max-lifetime: 1800000
+  log:
+    level: info
+    format: json
+config:
+  kafka:
+    enabled: true
+    producer: true
+management:
+  zipkin:
+    tracing:
+      endpoint: stg-zipkin.excellencekits.com:9411/api/v2/spans  
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+external-service:
+  config:
+    - id: vendorProfile
+      host: https://marketapi.excellencekits.com/
+      context: /vendor-profile/
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: token
+      services:
+        - name: profileInfo
+          path: profile/info  
+    - id: customerProfile
+      host: https://marketapi.excellencekits.com/
+      context: /customer-profile/
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: token
+      services:
+        - name: profileInfo
+          path: profile          
+images-service-config:
+  enable: true
+  project-base-directory: e-commerce
+  server-url: https://image-vault.excellencekits.com/images
+  entities:
+    - entity: item
+      variants:
+        - variant: large
+          size: 800
+          enable: true
+        - variant: medium
+          size: 400
+          enable: true
+        - variant: thumbnail
+          size: 200
+          enable: true
+        - variant: small
+          size: 100
+          enable: true
+    - entity: categoryItem
+      variants:
+        - variant: large
+          size: 800
+          enable: true
+        - variant: medium
+          size: 400
+          enable: true
+        - variant: thumbnail
+          size: 200
+          enable: true
+        - variant: small
+          size: 100
+          enable: true
+  
