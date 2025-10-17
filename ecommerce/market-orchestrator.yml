@@ -19,7 +19,7 @@ spring:
     unsecured-urls:
       - /customer/**
       - /dashboard
-      - /config/markets
+      - /config/**
       - /autoComplete
     oauth2:
       resourceserver:
