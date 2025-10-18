@@ -51,27 +51,27 @@ management:
 marketsplaces-config:
   host: http://cgw-e-comerace-internal-gateway:8032/
   markets-places:
-    - context: ecom-electronics-market
+    - context: e-electronics-market
       name: Electronics
       icon: Laptop
       active: true
-    - context: ecom-fashion-market
+    - context: e-fashion-market
       name: Fashion
       icon: Dress
       active: true
-    - context: ecom-cars-market
+    - context: e-cars-market
       name: Cars
       icon: Car
       active: true
-    - context: ecom-properties-market
+    - context: e-properties-market
       name: Properties
       icon: Home    
       active: true
-    - context: ecom-stationary-market
+    - context: e-stationary-market
       name: Stationary
       icon: Pen 
       active: true
-    - context: ecom-furniture-market
+    - context: e-furniture-market
       name: Furniture
       icon: Furniture  
       active: true
