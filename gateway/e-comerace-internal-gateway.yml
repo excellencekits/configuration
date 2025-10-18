@@ -29,33 +29,33 @@ spring:
               - "Location" 
       routes:
         - id: car-market
-          uri: lb://ecom-cars-market
+          uri: lb://e-com-cars-market
           predicates:
-            - Path=/ecom-cars-market/**
+            - Path=/e-cars-market/**
         - id: properties-market
-          uri: lb://ecom-properties-market
+          uri: lb://e-properties-market
           predicates:
-            - Path=/ecom-properties-market/**           
+            - Path=/e-properties-market/**           
         - id: furniture-market
-          uri: lb://ecom-furniture-market
+          uri: lb://e-furniture-market
           predicates:
-            - Path=/ecom-furniture-market/**
+            - Path=/e-furniture-market/**
         - id: fashion-market
-          uri: lb://ecom-fashion-market
+          uri: lb://e-fashion-market
           predicates:
-            - Path=/ecom-fashion-market/**
+            - Path=/e-fashion-market/**
         - id: stationary-market
-          uri: lb://ecom-stationary-market
+          uri: lb://e-stationary-market
           predicates:
-            - Path=/ecom-stationary-market/**     
+            - Path=/e-stationary-market/**     
         - id: stationary-market
-          uri: lb://ecom-stationary-market
+          uri: lb://e-stationary-market
           predicates:
-            - Path=/ecom-stationary-market/**       
+            - Path=/e-stationary-market/**       
         - id: electronics-market
-          uri: lb://ecom-electronics-market
+          uri: lb://e-electronics-market
           predicates:
-            - Path=/ecom-electronics-market/**              
+            - Path=/e-electronics-market/**              
   security:
     oauth2:
       client:
