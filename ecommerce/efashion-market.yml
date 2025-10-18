@@ -6,7 +6,7 @@ project:
 server:
   port: 8050
   servlet:
-    context-path: /ecom-fashion-market
+    context-path: /efashion-market
 eureka:
   client:
     serviceUrl:
