@@ -29,7 +29,7 @@ spring:
               - "Location" 
       routes:
         - id: car-market
-          uri: lb://e-com-cars-market
+          uri: lb://e-cars-market
           predicates:
             - Path=/e-cars-market/**
         - id: properties-market
