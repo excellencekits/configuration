@@ -31,27 +31,27 @@ spring:
         - id: car-market
           uri: lb://ecom-cars-market
           predicates:
-            - Path=/cars-market/**
+            - Path=/ecom-cars-market/**
         - id: properties-market
           uri: lb://ecom-properties-market
           predicates:
-            - Path=/properties-market/**           
+            - Path=/ecom-properties-market/**           
         - id: furniture-market
           uri: lb://ecom-furniture-market
           predicates:
-            - Path=/furniture-market/**
+            - Path=/ecom-furniture-market/**
         - id: fashion-market
           uri: lb://ecom-fashion-market
           predicates:
-            - Path=/fashion-market/**
+            - Path=/ecom-fashion-market/**
         - id: stationary-market
           uri: lb://ecom-stationary-market
           predicates:
-            - Path=/stationary-market/**     
+            - Path=/ecom-stationary-market/**     
         - id: stationary-market
           uri: lb://ecom-stationary-market
           predicates:
-            - Path=/stationary-market/**       
+            - Path=/ecom-stationary-market/**       
         - id: electronics-market
           uri: lb://ecom-electronics-market
           predicates:
