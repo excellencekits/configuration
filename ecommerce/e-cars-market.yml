@@ -1,6 +1,6 @@
 app:
-  name: Electonics
-  icon: LaptopMobile
+  name: Cars
+  icon: car
 server:
   port: 8034
   servlet:
