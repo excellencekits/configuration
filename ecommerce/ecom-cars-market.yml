@@ -4,7 +4,7 @@ app:
 server:
   port: 8034
   servlet:
-    context-path: /cars-market
+    context-path: /ecom-cars-market
 eureka:
   client:
     serviceUrl:
