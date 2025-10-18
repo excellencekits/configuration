@@ -4,7 +4,7 @@ app:
 server:
   port: 8033
   servlet:
-    context-path: /electronics-market
+    context-path: /ecom-electronics-market
 eureka:
   client:
     serviceUrl:
