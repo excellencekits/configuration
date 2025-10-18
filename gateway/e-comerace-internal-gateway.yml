@@ -55,7 +55,7 @@ spring:
         - id: electronics-market
           uri: lb://ecom-electronics-market
           predicates:
-            - Path=/electronics-market/**              
+            - Path=/ecom-electronics-market/**              
   security:
     oauth2:
       client:
