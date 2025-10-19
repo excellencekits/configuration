@@ -1,6 +1,7 @@
 app:
   name: Stationary
   icon: Pen
+  order: 4
 server:
   port: 8033
   servlet:
