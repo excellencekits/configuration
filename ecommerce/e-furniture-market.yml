@@ -1,6 +1,7 @@
 app:
   name: Furniture
   icon: Chair
+  order: 3
 server:
   port: 8033
   servlet:
