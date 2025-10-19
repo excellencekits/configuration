@@ -1,6 +1,6 @@
 app:
   name: Stationary
-  icon: LaptopMobile
+  icon: Pen
 server:
   port: 8033
   servlet:
