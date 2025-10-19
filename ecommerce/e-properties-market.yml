@@ -1,6 +1,7 @@
 app:
   name: Properties
   icon: Home
+  order: 5
 server:
   port: 8036
   servlet:
