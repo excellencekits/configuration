@@ -54,22 +54,33 @@ marketsplaces-config:
     - context: e-electronics-market
       name: Electronics
       active: true
+      order: 1
+      icon: LaptopMobile
     - context: e-fashion-market
       name: Fashion
       active: true
+      order: 2
+      icon: ShirtLine
     - context: e-cars-market
-      icon: Wheel
+      name: Cars
       active: true
+      order: 5
+      icon: Car
     - context: e-properties-market
       name: Properties
       active: true
+      order: 5
+      icon: Home
     - context: e-stationary-market
       name: Stationary
       active: true
+      order: 4
+      icon: Pen
     - context: e-furniture-market
       name: Furniture
       active: true
-
+      order: 3
+      icon: Chair
 
 custom:
   security:
