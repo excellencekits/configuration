@@ -1,6 +1,7 @@
 app:
   name: Fashion
   icon: ShirtLine
+  order: 2
 project:
   name: e-commerce  
 server:
