@@ -1,6 +1,7 @@
 app:
   name: Cars
   icon: Car
+  order: 6
 server:
   port: 8034
   servlet:
