@@ -63,7 +63,7 @@ marketsplaces-config:
       order : 2
     - context: e-cars-market
       name: Cars
-      icon: Car
+      icon: Wheel
       active: true
       order : 6
     - context: e-properties-market
