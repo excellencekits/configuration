@@ -87,13 +87,6 @@ images-service-config:
   server-url: https://image-vault.excellencekits.com/images
   entities:
     - entity: market-image
-      variants:
-        - variant: thumbnail
-          size: 200
-          enable: true
-        - variant: small
-          size: 100
-          enable: true
 custom:
   security:
     expose-unsecured-urls: true
