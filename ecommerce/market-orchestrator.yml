@@ -86,7 +86,14 @@ images-service-config:
   project-base-directory: e-commerce
   server-url: https://image-vault.excellencekits.com/images
   entities:
-    - entity: market-image 
+    - entity: item
+      variants:
+        - variant: thumbnail
+          size: 200
+          enable: true
+        - variant: small
+          size: 100
+          enable: true
 custom:
   security:
     expose-unsecured-urls: true
