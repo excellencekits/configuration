@@ -81,7 +81,12 @@ marketsplaces-config:
       active: true
       order: 3
       icon: Chair
-
+images-service-config:
+  enable: true
+  project-base-directory: e-commerce
+  server-url: https://image-vault.excellencekits.com/images
+  entities:
+    - entity: market-image 
 custom:
   security:
     expose-unsecured-urls: true
