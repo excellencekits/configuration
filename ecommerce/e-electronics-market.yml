@@ -75,6 +75,7 @@ images-service-config:
   project-base-directory: e-commerce
   server-url: https://image-vault.excellencekits.com/images
   entities:
+    - entity: market-image   
     - entity: item
       variants:
         - variant: large
