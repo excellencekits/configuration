@@ -32,6 +32,6 @@ spring:
     bootstrap-servers: stg-kafka.excellencekits.com:9092
 config:
   kafka:
-    enabled: true
-    producer: true
-    consumer: true
+    enabled: false
+    producer: false
+    consumer: false
