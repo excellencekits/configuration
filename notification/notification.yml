@@ -29,8 +29,9 @@ spring:
             enable: true
 
   kafka:
-    bootstrap-servers: hexadb:9092
+    bootstrap-servers: stg-kafka.excellencekits.com:9092
 config:
   kafka:
     enabled: true
+    producer: true
     consumer: true
