@@ -17,6 +17,11 @@ spring:
       maximum-pool-size: 10
       idle-timeout: 30000
       max-lifetime: 1800000
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://stg-oauth2.excellencekits.com
   mail:
     host: smtp.gmail.com
     username: elmustafafriri@gmail.com
