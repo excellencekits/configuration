@@ -22,8 +22,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://stg-oauth2.excellencekits.com
-          audience:
-            - "notification-service"
+
   mail:
     host: smtp.gmail.com
     username: elmustafafriri@gmail.com
