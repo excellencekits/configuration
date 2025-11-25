@@ -12,7 +12,7 @@ spring:
   log:
     level: info
   datasource:
-    url: jdbc:mysql://hexadb:3306/notification-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://stg-db.excellencekits.com:3306/notification-db?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: hexa
     password: mwdl
     hikari:
