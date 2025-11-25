@@ -68,8 +68,8 @@ external-service:
         - name: activate
           path: /account/{id}/activate  
     - id: notification
-      host: https://snotification.excellencekits.com
-      context: /
+      host: https://notification.excellencekits.com
+      context: /notification-service
       security: 
         token-url: https://stg-oauth2.excellencekits.com/oauth2/token
         grant-type: client_credentials
