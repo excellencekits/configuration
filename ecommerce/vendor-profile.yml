@@ -66,7 +66,18 @@ external-service:
         - name: createUser
           path: /account/create
         - name: activate
-          path: /account/{id}/activate   
+          path: /account/{id}/activate  
+    - id: notification
+      host: https://snotification.excellencekits.com
+      context: /
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: client_credentials
+        client-id: notification-service
+        client-secret: secret
+      services:
+        - name: publish
+          path: /publish        
 services:  
   imagevault: https://image-vault.excellencekits.com/images/images/
 images-service-config:
