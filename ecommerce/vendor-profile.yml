@@ -67,6 +67,8 @@ external-service:
           path: /account/create
         - name: activate
           path: /account/{id}/activate  
+        - name: checkEmailPhoneInUse
+          path: /account/checkEmailPhoneInUse
     - id: notification
       host: https://notification.excellencekits.com
       context: /notification-service
