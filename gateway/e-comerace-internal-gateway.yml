@@ -21,7 +21,7 @@ spring:
             allowedOrigins: 
               - "http://localhost:3000"
               - "http://localhost:3001"
-              - "http://adminmarket.excellencekits.com"
+              - "http://marketadmin.excellencekits.com"
               - "https://market.excellencekits.com"
             allowedMethods: "*"
             allowedHeaders: "*"
