@@ -66,6 +66,8 @@ external-service:
           path: customer/productDetails/vo
         - name: updateItemSoldCount
           path: customer/productDetails/{id}/updateItemSoldCount
+        - name: addReview
+          path: customer/reviews
     - id: vendorProfileService
       host: https://marketapi.excellencekits.com/
       context: /vendor-profile/
