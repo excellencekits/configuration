@@ -54,7 +54,7 @@ external-service:
         - name: removecart
           path: cart/delete
     - id: marketService
-      host: http://localhost:8030
+      host: https://marketapi.excellencekits.com/
       context: /market-orchestrator/
       headers:
         - X-context-Header
