@@ -37,12 +37,7 @@ spring:
       max-lifetime: 1800000
   data:
     mongodb:
-      host: stg-db.excellencekits.com
-      port: 27017
-      database: myapp
-      username: admin
-      password: YourSecurePassword123!
-      authentication-database: ecom-electronics-db
+      host: mongodb://admin:YourSecurePassword123!@stg-db.excellencekits.com:27017/?authMechanism=DEFAULT
   log:
     level: info
     format: json
