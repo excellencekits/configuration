@@ -1,1 +1,28 @@
-
+external-service:
+  config:
+    - id: userManagement
+      host: https://stg-user-maneger.excellencekits.com
+      context: /user-manager
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: client_credentials
+        client-id: market-dev-vendor-id
+        client-secret: secret
+      services:
+        - name: createUser
+          path: /account/create
+        - name: activate
+          path: /account/{id}/activate  
+        - name: checkEmailPhoneInUse
+          path: /account/checkEmailPhoneInUse
+    - id: notification
+      host: https://notification.excellencekits.com
+      context: /notification-service
+      security: 
+        token-url: https://stg-oauth2.excellencekits.com/oauth2/token
+        grant-type: client_credentials
+        client-id: notification-service
+        client-secret: secret
+      services:
+        - name: publish
+          path: /publish  
