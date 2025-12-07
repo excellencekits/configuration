@@ -37,7 +37,7 @@ spring:
       max-lifetime: 1800000
   data:
     mongodb:
-      uri: mongodb://admin:YourSecurePassword123!@stg-db.excellencekits.com:27017/?authMechanism=DEFAULT
+      uri: mongodb://admin:YourSecurePassword123!@stg-db.excellencekits.com:27017/ecom-electronics-db
   log:
     level: info
     format: json
