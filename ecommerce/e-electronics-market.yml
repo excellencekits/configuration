@@ -35,6 +35,14 @@ spring:
       maximum-pool-size: 10
       idle-timeout: 30000
       max-lifetime: 1800000
+  data:
+    mongodb:
+      host: stg-db.excellencekits.com
+      port: 27017
+      database: myapp
+      username: admin
+      password: YourSecurePassword123!
+      authentication-database: ecom-electronics-db
   log:
     level: info
     format: json
